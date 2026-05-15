@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+*.egg-info/
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data downloads (don't commit MNIST / SHD raw data)
+data/
+*.h5
+
+# Large training outputs (we extract small versions into checkpoints/)
+*_train_dt*_seed_*.pt
+
+# Generated demo output
+results.png
+results.pdf
