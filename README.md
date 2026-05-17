@@ -73,9 +73,9 @@ This is a demo, not a library. The eval logic is reusable (the dt_diagnose modul
 
 Specifically out of scope here:
 
-- Input regenerability detection (would distinguish resampling-induced failure from coincidence-loss; current demo uses zero-padded rate MNIST to suppress resampling effects entirely).
+- All three datasets are evaluated with input spike times held fixed across resolutions (zero-padded for rate-coded MNIST, deterministic by construction for latency MNIST, re-binning of the same physical events for SHD). Cross-dt failure modes that arise from input resampling, where the per-dt stochastic realisation changes, isn't probed by this demo.
 - Per-term discretisation audit (the demo assumes a known SNN structure rather than inspecting an arbitrary user network).
-- Multi-framework adapters (current code is for the demo's own Net class; snnTorch / Rockpool / SpikingJelly support would be the next step).
+- Multi-framework adapters (current code is for the demo's own Net class).
 - Multiple seeds for error bars (the headline numbers above are from seed 6 only).
 
 ## Notes on metric choice
