@@ -27,5 +27,4 @@ data/
 *_train_dt*_seed_*.pt
 
 # Generated demo output
-results.png
 results.pdf
